@@ -6,7 +6,7 @@ Project to create a Lambda function that converts phone numbers and saves the 5 
 
 As the directions were vague, I made a couple of assumptions as I went along. These will help in understanding how the application developed
 
- * A match can consists of 7 letters. These are the most important matches
+ * A match can consists of 7 letters. These are the most important matches.
  * A match can consist of 4 letters.
  * The first match of any given category is the best match. All words are equal.
  * The Area code is not going to be a part of the vanity number.
