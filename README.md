@@ -78,4 +78,6 @@ I feel that I came up with a good solution. Continually cutting the array of wor
 
 I would have also organized my code more clearly so it was easily understood, and I would've looked for simplications in the process as well.
 
+As regarding number order and storage, If I had been working on this project for a client, I would have spent time trying to understand what they were looking for; specifically if they wanted certain words stored that had ties to their products or company. Do they also want to find numbers that are associated to products they are working on for the future? 
+
 I enjoyed this project and found it challenging and rewarding, I would like to have gotten the Amazon Connect contact flow working, and then have gotten it working so that it would accept real calls and return vanity strings. I wanted to see my call flow in action, and wanted to see my cell phone entered into dynamoDb from a phone call within the timeframe. I'm going to keep working at it!
