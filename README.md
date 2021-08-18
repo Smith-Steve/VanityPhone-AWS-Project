@@ -32,33 +32,41 @@ A variety of configurations are performed on the object containing the phone num
 
 Contact flows are designed to allow calls centers to define the interaction paths from callers.
 
-I built out a contact flow by learning from a tutorial. I then determined how and where the user would enter their phone number, after which time in the contact flow the lambda function is invoked.
+I built out a contact flow by learning from a tutorial. I then entered into it how and where the user would enter their phone number, after which time in the contact flow the lambda function is invoked.
 
 
 ### Reasoning, Struggles & Solutions
 
 #### Lambda
 
-The reason I built out the lambda function this way was becuase I figured it would be simpler to dynamically check for matches against a decreasing array of words against an increasingly specific match criterion, i.e. the string. There is no absolute method to determine whether or not a string is a word independent of an outside resource. We therefore needed a dictionary. The dictionary I created for the lambda function had 30,000+ words in it. The best method to determine whether or not a phone number contained a vanity word within it, was by taking large portions out of the dictionary since. I overcame this by focusing on simplicity above other things. The solution quickly developed.
+The reason I built out the lambda function this way was becuase I figured it would be simpler to dynamically check for matches against a decreasing array of words against an increasingly specific match criterion, i.e. the string.  There is no absolute method to determine whether or not a string is a word independent of an outside resource. We therefore needed a dictionary. The dictionary I created for the lambda function had 30,000+ words in it. The best method to determine whether or not a phone number contained a vanity word within it, was by taking large portions out of the dictionary.
 
 For the Lambda function I overcame a number of challenges.  I was overly specific about _how_ the results should be created, and what constituted a VanityPhone number at first, and this caused a number of issues. I spent too much time focusing on the type of match, rather than creating an application that worked smoothly and simply. I had issues with managing the phone number character arrays and their relationship to eachother. If I had been working with a client, I would have asked clarifying questions which would have removed a lot of this.
+
+It was new for me to work with implementing AWS lambda functions, and ensuring that they enterd the information correctly. As it was my first time working with AWS at such a level, there were lots of things I needed to get up to speed with from Amazon's documentation and youtube tutorials. 
 
 
 ### Amazon
 
-I was new to AWS, so I had many struggles working with Amazon Connect and the lmabda. I looked for a number of tutorials to discover how the lambda function was to be set up, and how to work through a contact flow. The tutorial really helped me establish an understanding of how the contact flow process worked, and what Amazon Connect is capable of achieving for a company. In understanding this, it was easy to see how and where a number should be extracted and the lambda could be invoked.
+I was new to AWS, so I had many struggles working with Amazon Connect and the lmabda. I looked for a number of tutorials to discover how the lambda function was to be set up, and how to work through a contact flow. The tutorial really helped me establish an understanding of how the contact flow process worked, and what Amazon Connect is capable of achieving for a company. One of the areas I had the most difficulty with was the execution roles. I originally wrote my Lambda function outside of amaazon, merely looking up what it was. If I had known I could have built one right out from the start that had all the execution roles buiilt into it, the AWS implementation would have gone more smoothly.
 
 
 ### Shortcuts
 
-The way I managed the final results felt like a shortcut. The results arrays are sliced very broadly which in some cases means there will be more than 5 results returned.
+The way I managed the final results felt like a shortcut. The results arrays are sliced very broadly which in some cases means there will be more than 5 results returned. I ran out of time, so although I always provide at least 5 results, it is not nearly as neat as I would've liked.
 
 I originally imporated an external diciontary, but decided creating a file would be simpler to manage. I managed to find a word confirmation library which I was able to grab the words right out of, and turn those into a searchable array easily enough.
 
-The way I managed the arrays for the phone number within the getVanityNumbers functino was a short cut that could have been managed more elegantly.
-
-The fact that I was close for time made it difficult to manage developing sufficient knowledge of lambda functionality and contact center to implement a solution. As a result of this, I kept trying to make it work within the way I understood, rather than following a careful procedure of asking the right questions to make sure I was headed in the right direction.
+The way I managed the arrays for the phone number within the getVanityNumbers function was a short cut that could have been managed more elegantly.
 
 
 ### More Time
 If I had had more time, I would have proceeded more deliberately through the AWS implementation process for the lambda function.
+
+The data that was entered into the database would only contain 5 numbers, instead of the array that it does. This was something I had planned to go back and correct, but did not have the time to do in the end.
+
+I also would have implemented number testing for numbers with 0 and 1.
+
+I feel that although I came up with a good solution, and that continually cutting the array of words down to a managable number was a good method, I feel that there are a numebr of functions I could have written into the applicaiton that would have made it faster. For example, I could have created an function testing for 2/3 letter sequences that do not occur next to eachother in the English language. I could then have deleted some of the 3 letter strings before they're run against the dictionary file.
+
+I really enjoyed this project and found it challenging and rewarding, I would like to have gotten completely through the Amazon Connect contact flow though, and then have gotten it working so that it would accept real calls and return vanity strings. I was looking forward to seeing my number entered into dynamoDb through my cell phone within the time frame. I'm going to keep working at it!
