@@ -70,7 +70,7 @@ The way I managed the arrays for the phone number within the getVanityNumbers fu
 
 ### More Time
 
-The data that was entered into the database would only contain 5 numbers, instead of the array that it does. This was something I had planned to go back and correct but did not have the time to do in the end.
+The data that was entered into the database would only contain 5 numbers, instead of the array that it does. This was something I had planned to go back and correct but did not have the time to do in the end. Instead, a number of arrays are inserted which between them contain at least 5 words.
 
 I also would have implemented number testing for numbers with 0 and 1.
 
