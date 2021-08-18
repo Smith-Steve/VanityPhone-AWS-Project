@@ -28,6 +28,8 @@ For the 4 letter matches, a filter operation is performed upon them to check for
 
 A variety of configurations are performed on the object containing the phone numbers. It is then put into Amazon's DynamoDB.
 
+The application has been varied and enters information from the lambda function into dynamoDb.
+
 ### Amazon Connect Contact Flow
 
 Contact flows are designed to allow calls centers to define the interaction paths from callers.
