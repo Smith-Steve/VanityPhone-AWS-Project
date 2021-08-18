@@ -8,11 +8,9 @@ As the directions were vague, I made a couple of assumptions as I went along. Th
 
  * A match can consists of 7 letters. These are the most important matches
  * A match can consist of 4 letters.
- * All words that constitute a match are either 4 letters, or 7 letters in length.
  * The first match of any given category is the best match. All words are equal.
  * The Area code is not going to be a part of the vanity number.
  * All matches are made with English words. No other langauge is included.
- * If there are aren't enough matches, then partial matches are accepted.
 
 
 ### Lambda
