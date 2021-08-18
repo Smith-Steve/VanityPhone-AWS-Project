@@ -1,4 +1,4 @@
-# AWS-Amazon-Connect-VoiceFoundry Assignment
+# VanityPhone-AWS-Project
 
 Project to create a Lambda function that converts phone numbers and saves the 5 best resulting words from that number into Amazon's DynamoDB. Part of the assignment also was to create an amazon connect contact flow that reviews a caller’s phone number and provides 3 vanity possibilities that are returned.
 
