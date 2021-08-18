@@ -36,6 +36,11 @@ Contact flows are designed to allow calls centers to define the interaction path
 
 I built out a contact flow by learning from a tutorial. I then entered into it how and where the user would enter their phone number, after which time in the contact flow the lambda function is invoked.
 
+![1](https://user-images.githubusercontent.com/51938797/129975159-2ca8acd4-a63d-4b17-b03f-bef2bbf015c3.png)
+![2](https://user-images.githubusercontent.com/51938797/129975129-1610fa36-9a24-4bc4-94a0-898efa3431ce.png)
+![3](https://user-images.githubusercontent.com/51938797/129975145-44ec41b7-0fa0-4822-b5e6-2f0591bc4fe9.png)
+
+
 
 ### Reasoning, Struggles & Solutions
 
@@ -43,14 +48,14 @@ I built out a contact flow by learning from a tutorial. I then entered into it h
 
 The reason I built out the lambda function this way was becuase I figured it would be simpler to dynamically check for matches against a decreasing array of words against an increasingly specific match criterion, i.e. the string.  There is no absolute method to determine whether or not a string is a word independent of an outside resource. We therefore needed a dictionary. The dictionary I created for the lambda function had 30,000+ words in it. The best method to determine whether or not a phone number contained a vanity word within it, was by taking large portions out of the dictionary.
 
-For the Lambda function I overcame a number of challenges.  I was overly specific about _how_ the results should be created, and what constituted a VanityPhone number at first, and this caused a number of issues. I spent too much time focusing on the type of match, rather than creating an application that worked smoothly and simply. I had issues with managing the phone number character arrays and their relationship to eachother. If I had been working with a client, I would have asked clarifying questions which would have removed a lot of this.
+For the Lambda function I overcame a number of challenges.  I was overly specific about _how_ the results should be created, and what constituted a VanityPhone number at first, and this caused a number of issues. I spent too much time focusing on the type of match, rather than creating an application that worked smoothly and simply. I had issues with managing the phone number character arrays and their relationship to eachother. If I had been working with a client, I would have worked with the client to understand what their needs or more precisely so that this would not be an issue. 
 
-It was new for me to work with implementing AWS lambda functions, and ensuring that they enterd the information correctly. As it was my first time working with AWS at such a level, there were lots of things I needed to get up to speed with from Amazon's documentation and youtube tutorials. 
+It was new for me to work with implementing AWS lambda functions, and ensuring that I enterd the information correctly. As it was my first time working with AWS at such a level, there were lots of things I needed to get up to speed with from Amazon's documentation and youtube tutorials. I had a number of issues getting the lambda function to respond to the test event, which helped to flesh out and connect my knowledge of AWS by seeing how different parts like Lambda and DynamoDb are configured to work together and respond to eachother.
 
 
 ### Amazon
 
-I was new to AWS, so I had many struggles working with Amazon Connect and the lmabda. I looked for a number of tutorials to discover how the lambda function was to be set up, and how to work through a contact flow. The tutorial really helped me establish an understanding of how the contact flow process worked, and what Amazon Connect is capable of achieving for a company. One of the areas I had the most difficulty with was the execution roles. I originally wrote my Lambda function outside of amaazon, merely looking up what it was. If I had known I could have built one right out from the start that had all the execution roles buiilt into it, the AWS implementation would have gone more smoothly.
+I was new to AWS, so I had many struggles working with Amazon Connect. I looked for a number of tutorials to discover how the lambda function was to be set up, and how to work through a contact flow. The tutorial really helped me establish an understanding of how the contact flow process worked, and what Amazon Connect is capable of achieving for a company. One of the areas I had the most difficulty with was the execution roles. I originally wrote my Lambda function outside of amaazon, merely looking up what it was. If I had known I could have built one right out from the start that had all the execution roles buiilt into it, the AWS implementation would have gone more smoothly.
 
 
 ### Shortcuts
