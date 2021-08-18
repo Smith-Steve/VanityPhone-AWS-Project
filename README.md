@@ -9,7 +9,7 @@ As the directions were vague, I made a couple of assumptions as I went along. Th
  * A match can consists of 7 letters. These are the most important matches.
  * A match can consist of 4 letters.
  * The first match of any given category is the best match. All words are equal.
- * The Area code is not going to be a part of the vanity number.
+ * The area code is not going to be a part of the vanity number.
  * All matches are made with English words. No other langauge is included.
  * If a 0 or 1 was in a the phone number, then that phone number was not a vanity one that would be tested for.
 
