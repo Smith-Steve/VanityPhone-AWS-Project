@@ -16,15 +16,15 @@ As the directions were vague, I made a couple of assumptions as I went along. Th
 
 ### Lambda
 
-The lambda function is designed to digest a number, and determine if and how many words there are in the phone number. First it looks for seven letter words that are a complete match, and then it looks for four letter words that are a complete match. It then also grabs all the partial matches. These are stored in a single object.
+The lambda function is designed to digest a number, and determine if and how many words there are in the phone number. First it looks for seven letter words that are a complete match, and then it looks for four letter words that are a complete match. It also grabs all the partial matches. These are stored in a single object.
 
-The manner in which it creates a match is as follows. It generates a 3 letter combination (from the first three digits of the seven digits following the area code) string, which is then run against the entire dictionary of words. An array of matches is then returned based off of these 3 letter matches. If there are any values in the returned array of matches, the same operation is again performed. This time however, a letter is added from the fourth digit of the phone number to the string to be tested, and the string is then run against the array of matches from the 3 letter string.
+The manner in which it creates a match is as follows. It generates a 3 letter combination (from the first three digits of the seven digits following the area code) string, which is then run against the entire dictionary of words. It tests for a match from the beginning of the string. So if the 3 letter string is 'alb', then only words that start with 'alb' like, 'albatas' are returned.  An array of matches is then returned based off of these 3 letter matches. If there are any values in the returned array of matches, the same operation is again performed. This time however, a letter is added from the fourth digit of the phone number to the string to be tested, and the string is then run against the array of matches from the 3 letter string.
 
 The application stops to create a list of partial matches here as well.
 
 This operation is performed sequentially all the way through the returned matches, until 7 letters are added to the final string, and then the returrned array contains a complete array of all 7 letter matches.
 
-For the 4 letter matches, a filter operation is performed upon them to check for which matches have an length of 4. This array is then returned as the complete list of four letter matches.
+For the 4 letter matches, a filter operation is performed upon them to check for which matches have an length of 4. This array is then returned as the complete list of four letter matches. The variable containing the four letter matches is already there, we just need to access it again.
 
 A variety of configurations are performed on the object containing the phone numbers. It is then put into Amazon's DynamoDB.
 
