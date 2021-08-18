@@ -72,7 +72,7 @@ The way I managed the arrays for the phone number within the getVanityNumbers fu
 
 The data that was entered into the database would only contain 5 numbers, instead of the array that it does. This was something I had planned to go back and correct but did not have the time to do in the end. Instead, a number of arrays are inserted which between them contain at least 5 words.
 
-I also would have implemented number testing for numbers with 0 and 1.
+I also would have implemented number testing for numbers with 0 and 1. There was also plenty of room to determine if there were 3 letter words and 5 letters at least. Had there been more time, I'd have gotten around to this as well.
 
 I feel that I came up with a good solution. Continually cutting the array of words down to a manageable number was a good method. I feel that there are several functions I could have written into the application that would have made it faster though. For example, I could have created a function testing for 2/3 letter sequences that do not occur next to each other in the English language. I could then have deleted some of the 3 letter strings before they're run against the dictionary file.
 
