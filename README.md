@@ -26,7 +26,8 @@ This operation is performed sequentially all the way through the returned matche
 
 A variety of configurations are performed on the object containing the phone numbers. It is then inserted into Amazon's DynamoDB at the configured location.
 
-![4](https://user-images.githubusercontent.com/51938797/129979452-c6d2fe78-db62-45be-a33b-aea8a5086286.png)
+![4](https://user-images.githubusercontent.com/51938797/129979776-f7cbed86-12ac-4794-9df9-a920524f63aa.png)
+
 
 
 
