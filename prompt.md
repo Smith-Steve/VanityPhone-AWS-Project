@@ -5,7 +5,7 @@ Where you don't have the time to implement something, add comments to your code 
 
 Deliverables
 1. Git Repo with all code and documentation
-2. BONUS - a working Amazon Connect phone number to test in your environment :-)
+2.  BONUS - a working Amazon Connect phone number to test in your environment :-)
 
 
 Exercise
