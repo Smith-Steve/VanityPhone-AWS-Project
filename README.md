@@ -33,14 +33,14 @@ A variety of configurations are performed on the object containing the phone num
 
 Contact flows are designed to allow calls centers to define the interaction paths from callers.
 
-I built out a contact flow based off of what I saw in a tutorial, which was nothing more than the standard contact flow within a contact center. I then determined how and where the user would enter their phone number, after which time in the contact flow the lambda function is invoked.
+I built out a contact flow by learning from a tutorial. I then determined how and where the user would enter their phone number, after which time in the contact flow the lambda function is invoked.
 
 
 ### Reasoning, Struggles & Solutions
 
 #### Lambda
 
-The reason I built out the lambda this way was becuase I figured it would be simpler to dynamically check for matches against a decreasing array of words against an increasingly specific match criterion, i.e. the string. There is no absolute method to determine whether or not a string is a word independent of an outside resource. We therefore needed a dictionary. The dictionary I created for the lambda function had 30,000+ words in it. The best method to determine whether or not a phone number contained a vanity word within it, was by taking large portions out of the dictionary since. I overcame this by focusing on simplicity above other things. The solution quickly developed.
+The reason I built out the lambda function this way was becuase I figured it would be simpler to dynamically check for matches against a decreasing array of words against an increasingly specific match criterion, i.e. the string. There is no absolute method to determine whether or not a string is a word independent of an outside resource. We therefore needed a dictionary. The dictionary I created for the lambda function had 30,000+ words in it. The best method to determine whether or not a phone number contained a vanity word within it, was by taking large portions out of the dictionary since. I overcame this by focusing on simplicity above other things. The solution quickly developed.
 
 For the Lambda function I overcame a number of challenges.  I was overly specific about _how_ the results should be created, and what constituted a VanityPhone number at first, and this caused a number of issues. I spent too much time focusing on the type of match, rather than creating an application that worked smoothly and simply. I had issues with managing the phone number character arrays and their relationship to eachother. If I had been working with a client, I would have asked clarifying questions which would have removed a lot of this.
 
