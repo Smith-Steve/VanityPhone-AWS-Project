@@ -4,7 +4,7 @@ Project to create a Lambda function that converts phone numbers and saves the 5 
 
 ## Assumptions
 
-As the directions left room to interpret, I made a couple of assumptions as I went along. These will help in understanding how the application developed
+As the directions left room for interpretation, I made a couple of assumptions as I went along. These will help in understanding how the application developed
 
  * A match can consist of 7 letters. These are the most important matches.
  * A match can consist of 4 letters.
