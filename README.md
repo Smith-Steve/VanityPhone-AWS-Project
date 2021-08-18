@@ -26,13 +26,17 @@ This operation is performed sequentially all the way through the returned matche
 
 A variety of configurations are performed on the object containing the phone numbers. It is then inserted into Amazon's DynamoDB at the configured location.
 
+![4](https://user-images.githubusercontent.com/51938797/129979452-c6d2fe78-db62-45be-a33b-aea8a5086286.png)
+
+
+
 ### Amazon Connect Contact Flow
 
 Contact flows are designed to allow calls centers to define the interaction paths from callers.
 
 I built out a contact flow by learning from a tutorial. I then configured how and where the user would enter their phone number, after which time in the contact flow the lambda function is invoked.
 
-![1](https://user-images.githubusercontent.com/51938797/129975159-2ca8acd4-a63d-4b17-b03f-bef2bbf015c3.png)
+
 ![2](https://user-images.githubusercontent.com/51938797/129975129-1610fa36-9a24-4bc4-94a0-898efa3431ce.png)
 ![3](https://user-images.githubusercontent.com/51938797/129975145-44ec41b7-0fa0-4822-b5e6-2f0591bc4fe9.png)
 
