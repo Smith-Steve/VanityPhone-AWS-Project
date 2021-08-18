@@ -4,8 +4,8 @@ We expect you to build this out as you would a production project for a client, 
 Where you don't have the time to implement something, add comments to your code or documentation on how you would have changed or added to your implementation in the "real world".
 
 Deliverables
-1.           Git Repo with all code and documentation
-2.           BONUS - a working Amazon Connect phone number to test in your environment :-)
+1. Git Repo with all code and documentation
+2. BONUS - a working Amazon Connect phone number to test in your environment :-)
 
 
 Exercise
