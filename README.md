@@ -78,4 +78,4 @@ I feel that I came up with a good solution. Continually cutting the array of wor
 
 I would have also organized my code more clearly so it was easily understood, and I would've looked for simplications in the process as well.
 
-I really enjoyed this project and found it challenging and rewarding, I would like to have gotten completely through the Amazon Connect contact flow though, and then have gotten it working so that it would accept real calls and return vanity strings. I wanted to confirm that my call flow was set up the correct way, and I was looking forward to seeing my number entered DynamoDB through my cell phone within the time frame. I'm going to keep working at it!
+I really enjoyed this project and found it challenging and rewarding, I would like to have gotten the Amazon Connect contact flow working, and then have gotten it working so that it would accept real calls and return vanity strings. I wanted to confirm that my call flow was set up the correct way, and I was looking forward to seeing my number entered DynamoDB through my cell phone within the time frame. I'm going to keep working at it!
