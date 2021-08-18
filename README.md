@@ -68,7 +68,6 @@ The way I managed the arrays for the phone number within the getVanityNumbers fu
 
 
 ### More Time
-If I had had more time, I would have proceeded more deliberately through the AWS implementation process for the lambda function.
 
 The data that was entered into the database would only contain 5 numbers, instead of the array that it does. This was something I had planned to go back and correct, but did not have the time to do in the end.
 
@@ -76,4 +75,4 @@ I also would have implemented number testing for numbers with 0 and 1.
 
 I feel that although I came up with a good solution, and that continually cutting the array of words down to a managable number was a good method, I feel that there are a numebr of functions I could have written into the applicaiton that would have made it faster. For example, I could have created an function testing for 2/3 letter sequences that do not occur next to eachother in the English language. I could then have deleted some of the 3 letter strings before they're run against the dictionary file.
 
-I really enjoyed this project and found it challenging and rewarding, I would like to have gotten completely through the Amazon Connect contact flow though, and then have gotten it working so that it would accept real calls and return vanity strings. I was looking forward to seeing my number entered into dynamoDb through my cell phone within the time frame. I'm going to keep working at it!
+I really enjoyed this project and found it challenging and rewarding, I would like to have gotten completely through the Amazon Connect contact flow though, and then have gotten it working so that it would accept real calls and return vanity strings. I wanted to confirm that my call flow was set up the correct way, and I was looking forward to seeing my number entered into dynamoDb through my cell phone within the time frame. I'm going to keep working at it!
