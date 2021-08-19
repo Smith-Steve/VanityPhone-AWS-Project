@@ -17,7 +17,7 @@ const numberToLetter = {
 
 exports.handler = async(event, context, callback) => {
 
-  const phoneNumber = event.key1; // something something
+  const phoneNumber = event.key1;
   const phone = new PhoneProperties(phoneNumber);
   if (typeof phoneNumber !== 'string') {
     phone.stringNumber = phoneNumber.toString();
