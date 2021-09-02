@@ -28,6 +28,7 @@ exports.handler = async(event, context, callback) => {
     phone.stringNumber = phoneNumber.toString();
   }
   phone.numberArray = phoneNumber.toString().split('');
+  // turn string into array.
   phone.phoneNumber = phone.numberArray.slice(3, 10);
   // if a phone number contains a zero or a 1, an error is thrown.
   numberElimination(phone);
@@ -93,7 +94,7 @@ exports.handler = async(event, context, callback) => {
           if (arrayOfMatches.length > 0) {
             /*
             If there are matches, a loop is then run. A new string is created consisting of 4 letters. That string, is then run against the
-            three letter matches, in this case the variable is called 'arrayOfMatches' on line 97.
+            three letter matches, in this case the variable is called 'arrayOfMatches'
             An array is then returned, that contains the 4 letter matches within it.
             */
             for (let l = 0; l < fourthArray.length; l++) {
@@ -129,7 +130,7 @@ exports.handler = async(event, context, callback) => {
                 }
               }
               //Since there were not many 7 letter matches coming through for the phone numbers I tested. I decided to create some other matches as well.
-              //For our partial mathces array (please see line 100) we run that array in a similar sort of operation that we did the sequence of dictionary checks,
+              //For our partial mathces array (please see line 105) we run that array in a similar sort of operation that we did the sequence of dictionary checks,
               // except we looked for words that were not equal to 4 letters in the dictionary file.
               // those words are then added to their own array.
               if (fourLetterPartialMatches.length > 0) {
@@ -171,7 +172,7 @@ exports.handler = async(event, context, callback) => {
     // exact matches. If we need partial matches, which is a rarer case, then the optional argument can be supplied so that
     // we can get the similarly formatted data back.
 
-    // The string argument is the current string being iterated over. So 'due'. That string is then run against the dictionary file, and all results are returned in a seperate array
+    // The string argument is the current string being iterated over. That string is then run against the dictionary file, and all results are returned in a seperate array
     // and then provided to the application where it is needed.
 
     let arrayOfWords;
