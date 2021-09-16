@@ -197,7 +197,7 @@ exports.handler = async(event, context, callback) => {
       'TableName': 'VoiceFoundryAWSDynamoDBTable',
       'Item': {
         'ID': makeid(20),
-        'Resources': JSON.stringify(numberInformation)
+        'PhoneNumberResults': JSON.stringify(numberInformation)
       }
     };
 
